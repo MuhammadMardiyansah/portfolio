@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-menu {
+  @apply w-[30px] h-[2px] my-2 block bg-gray-400;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45 bg-white;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45 bg-white;
+}
+
+.nav-scroll {
+  @apply fixed bg-white/5 backdrop-blur-sm shadow-md duration-700;
+}
+
+/* .card{
+    @apply ml-auto p-8 rounded-sm w-[350px] flex flex-col item-center justify-center bg-white/5 backdrop-blur-sm shadow-md text-gray-400;
+} */
+
+.card {
+  @apply bg-white/5 backdrop-blur-sm shadow-md text-gray-400 ml-auto lg:ml-10 p-5 rounded-sm w-[300px] lg:w-[350px] border-gray-800 border-2;
+}
+.card-skill {
+  @apply bg-white/5 backdrop-blur-sm shadow-md text-gray-400 mx-0 px-0 p-5 h-[120px] w-full border-black;
+}
+
+.card-project {
+  @apply bg-white/5 backdrop-blur-sm shadow-md text-gray-400 h-full w-full rounded-xl;
+}
